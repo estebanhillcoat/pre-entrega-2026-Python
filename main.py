@@ -1,4 +1,4 @@
-productos = ["kiwi","fideos","pepsi"]
+productos = []
 
 while True:
     opciones = input("Elija la opcion deseada\nR - Remover\nS - Salir\nB - Buscar\nA - Agregar\nL - Listar productos\n")
@@ -12,6 +12,11 @@ while True:
             print(f"\n{producto_remover} quitado con exito.\n")
         case "S":
             break
+        
+        case "A":
+            producto_agregar = input("\nIngrese producto a agregar: \n")
+            productos.append(producto_agregar)
+            print(f"\n{producto_agregar} agregado con exito.\n")
         case "L":
             print(productos)
         case "B":
